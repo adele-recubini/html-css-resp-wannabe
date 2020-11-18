@@ -112,7 +112,6 @@ img {
    background-color:#f9f9f9;
 }
 
-
   #lezioni, #steps, #why, #text{
    font-size: 40px;
  }
@@ -121,7 +120,7 @@ img {
 /* Bonus:
 Aggiungere una visualizzazione intermedia per i tablet. */
 
-@media screen and (max-width: 768px) {
+ @media screen and (min-width: 420px) and (max-width: 768px) {
   h1{
     font-size: 60px;
   }
@@ -131,6 +130,19 @@ Aggiungere una visualizzazione intermedia per i tablet. */
   #lezioni, #steps, #why, #text{
     font-size: 40px;
   }
+  #lezioni .row>.left{
+    margin-right: 10px;
+  }
+
+  #lezioni .row>.right{
+    margin-left: 10px;
+
+  }
+  #lezioni .row>.left, #lezioni .row>.right{
+    width: calc(50% - 20px);
+
+  }
+
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
