@@ -130,6 +130,8 @@ Aggiungere una visualizzazione intermedia per i tablet. */
   #lezioni, #steps, #why, #text{
     font-size: 40px;
   }
+
+  /* per fare piu spazio alle scritte do dei margini che andranno ricacolati con il calc */
   #lezioni .row>.left{
     margin-right: 10px;
   }
@@ -140,8 +142,19 @@ Aggiungere una visualizzazione intermedia per i tablet. */
   }
   #lezioni .row>.left, #lezioni .row>.right{
     width: calc(50% - 20px);
-
   }
+
+
+ #steps .row>.central{
+   margin: 0 10px;
+ }
+ #steps .row>.left,
+ #steps .row>.central,
+ #steps .row>.right {
+     width: calc(33% - 20px);
+ }
+
+/* fine ricalcolo margine */
 
   #steps .row>.left,
   #steps .row>.central,
