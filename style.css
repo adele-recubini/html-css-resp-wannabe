@@ -81,6 +81,7 @@ img {
   h3{
     font-size: 60px;
     margin-bottom:10px;
+    text-align: center;
   }
   #lezioni .row>.left, #lezioni .row>.right {
     width: 100%;
@@ -95,12 +96,57 @@ img {
    width: 100%;
    margin-top: 80px;
    padding: 30px;
+   background-color:#f9f9f9;
  }
- .container.grey {
-   background-color: white;
+  #steps .row{
+    background-color:#f9f9f9;
  }
+
+ #why .row>.first,
+ #why .row>.second,
+ #why .row>.third {
+ background-color:#f9f9f9;
+ }
+
+  #why .row{
+   background-color:#f9f9f9;
+}
+
+
   #lezioni, #steps, #why, #text{
-   font-size: 50px;
+   font-size: 40px;
+ }
+}
+
+/* Bonus:
+Aggiungere una visualizzazione intermedia per i tablet. */
+
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: 60px;
+  }
+  h3{
+    font-size: 40px;
+  }
+  #lezioni, #steps, #why, #text{
+    font-size: 40px;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+  background-color:#f9f9f9;
+ }
+  #steps .row{
+   background-color:#f9f9f9;
+ }
+ #why .row>.first,
+ #why .row>.second,
+ #why .row>.third {
+ background-color:#f9f9f9;
+ }
+
+ #why .row{
+  background-color:#f9f9f9;
  }
 
 }
